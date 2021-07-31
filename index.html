@@ -1,22 +1,175 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>My First Web Page</title>
-    <style media="screen">
-      body {
-        background-color: red;
-      }
-      h1 {
-        color: green;
-      }
-      p {
-        color: yellowgreen;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>First Heading</h1>
-    <p>first paragraph</p>
-  </body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            #bottom_bar {
+                position:fixed;
+                bottom: 10px;
+                left: 30%;
+                right: 30%;
+                text-align: center;
+                background-color: red;
+                animation-name: bottom_bar_color_changing;
+                animation-duration: 0.8s;
+                animation-iteration-count: infinite;
+            }
+            
+            #go_back_up_button {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                font-size: 20px;
+            }
+            
+            #floating_panels {
+                width: 30%;
+                padding-left:7px;
+                padding-right: 7px;
+                position: fixed;
+                right: 10px;
+                top: 10px;
+            }
+            
+            #first_side_bar {
+                text-align: center;
+                border: solid 2px;
+                animation-name: convincer_color_changing;
+                animation-duration: 0.8s;
+                animation-iteration-count: infinite;
+                background-color: rgb(247, 247, 247);
+            }
+            
+            #second_side_bar {
+                margin:10px 0;
+                border: solid 2px;
+                animation-name: pricing_panel_color_changing;
+                animation-duration: 0.8s;
+                animation-iteration-count: infinite;
+                background-color: rgb(247, 247, 247);
+            }
+            
+            #price {
+                animation-name: price_color_changing;
+                animation-duration: 0.8s;
+                animation-iteration-count: infinite;
+            }
+            
+            @keyframes bottom_bar_color_changing {
+                0% {background-color: rgb(255, 0, 0);}
+                20% {background-color: rgb(190, 65, 0);}
+                25% {background-color: rgb(125, 125, 0);}
+                33% {background-color: rgb(0, 255, 0);}
+                40% {background-color: rgb(0, 190, 65);}
+                50% {background-color: rgb(0, 125, 125);}
+                60% {background-color: rgb(0, 65, 190);}
+                66% {background-color: rgb(0, 0, 255);}
+                75% {background-color: rgb(125, 0, 125);}
+                80% {background-color: rgb(190, 0, 65);}
+                100% {background-color: rgb(255, 0, 0);}
+            }
+            
+            @keyframes convincer_color_changing {
+                0% {border-color: rgb(224, 224, 9);}
+                100% {border-color: grey;}
+            }
+            
+            @keyframes pricing_panel_color_changing {
+                0% {border-color: rgb(255, 0, 0);}
+                20% {border-color: rgb(190, 65, 0);}
+                25% {border-color: rgb(125, 125, 0);}
+                33% {border-color: rgb(0, 255, 0);}
+                40% {border-color: rgb(0, 190, 65);}
+                50% {border-color: rgb(0, 125, 125);}
+                60% {border-color: rgb(0, 65, 190);}
+                66% {border-color: rgb(0, 0, 255);}
+                75% {border-color: rgb(125, 0, 125);}
+                80% {border-color: rgb(190, 0, 65);}
+                100% {border-color: rgb(255, 0, 0);}
+            }
+            
+            
+            @keyframes price_color_changing {
+                0% {color: rgb(255, 0, 0);}
+                20% {color: rgb(190, 65, 0);}
+                25% {color: rgb(125, 125, 0);}
+                33% {color: rgb(0, 255, 0);}
+                40% {color: rgb(0, 190, 65);}
+                50% {color: rgb(0, 125, 125);}
+                60% {color: rgb(0, 65, 190);}
+                66% {color: rgb(0, 0, 255);}
+                75% {color: rgb(125, 0, 125);}
+                80% {color: rgb(190, 0, 65);}
+                100% {color: rgb(255, 0, 0);}
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1 id="top_header">You're invited!</h1>
+        <h2>To something!</h2>
+        
+        <p>The details:</p>
+        <ol>
+            <li>detail 1</li>
+            <li>detail 2</li>
+            <li>detail 3</li>
+            <li>detail 4</li>
+            <li>detail 5</li>
+            <li>detail 6</li>
+            <li>detail 7</li>
+            <li>detail 8</li>
+            <li>detail 9</li>
+            <li>detail 10</li>
+            <li>detail 11</li>
+            <li>detail 12</li>
+            <li>detail 13</li>
+            <li>detail 14</li>
+            <li>detail 15</li>
+            <li>detail 16</li>
+            <li>detail 17</li>
+            <li>detail 18</li>
+            <li>detail 19</li>
+            <li>detail 20</li>
+            <li>detail 21</li>
+            <li>detail 22</li>
+            <li>detail 23</li>
+            <li>detail 24</li>
+            <li>detail 25</li>
+            <li>detail 26</li>
+            <li>detail 27</li>
+            <li>detail 28</li>
+            <li>detail 29</li>
+            <li>detail 30</li>
+            <li>detail 31</li>
+            <li>detail 32</li>
+            <li>detail 33</li>
+            <li>detail 34</li>
+            <li>detail 35</li>
+            <li>detail 36</li>
+            <li>detail 37</li>
+            <li>detail 38</li>
+            <li>detail 39</li>
+            <li>detail 40</li>
+            <li>detail 41</li>
+            <li>detail 42</li>
+        </ol>
+        <div id="floating_panels">
+        
+            <div id="first_side_bar">
+                
+                <p>Yeah, thats true!! you're invited to the best party of the year! There's no reason why you shouldn't be there, count on us!</p>
+                
+            </div>
+            
+            <div id="second_side_bar">
+                <p>entrence + alcohol + DJ all together for <span id="price">10$</span> only</p>
+            </div>
+        </div>
+        
+        <a href="#top_header"><button id="go_back_up_button">^<br>^</button></a>
+        
+        <div id="bottom_bar">!!!!Be there or be square!!!!</div>
+    </body>
 </html>
