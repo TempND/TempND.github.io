@@ -186,8 +186,20 @@
             </div>
         </div>
         
-        <a href="#top_header"><button id="go_back_up_button">^<br>^</button></a>
+        <a href="#top_header"  class="scroll"><button id="go_back_up_button">^<br>^</button></a>
         
         <div id="bottom_bar">!!!!Be there or be square!!!!</div>
+        
+        <script type="text/javascript" src="http://ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                %(".scroll").click(function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 2000);
+                });
+            });
+        </script>
+        
     </body>
 </html>
